@@ -1,0 +1,4 @@
+#Wed Mar 11 09:23:02 CET 2020
+base.0=/home/chris/Documents/github/blockbeer/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+path.0=classes.dex
