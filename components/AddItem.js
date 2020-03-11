@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import {
   View,
   Text,
@@ -12,18 +13,26 @@ const AddItem = ({addItem}) => {
   const [text, setText] = useState('');
   const onChange = textValue => setText(textValue);
 
+
   return (
     <View>
       <TextInput
-        placeholder="Add Item..."
+        placeholder="Input your order ammount here"
         style={styles.input}
         onChangeText={onChange}
         value={text}
       />
+      <TextInput
+        placeholder="input stakeholder name"
+        style={styles.input}
+        //onChangeText={onChange}
+       
+      />
       <TouchableOpacity
         style={styles.btn}
-        onPress={() => {
-          addItem(text);
+        onPress={async () => {
+          
+          addItem(text, stakeholder);
           setText('');
         }}>
         <Text style={styles.btnText}>
@@ -31,6 +40,7 @@ const AddItem = ({addItem}) => {
         </Text>
       </TouchableOpacity>
     </View>
+   
   );
 };
 

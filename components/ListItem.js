@@ -33,7 +33,7 @@ const ListItem = ({
           />
         ) : (
           <Text
-            onPress={() => itemChecked(item.id, item.text)}
+            onPress={() => itemChecked(item.id, item.text,item.stakeholder)}
             style={
               checked.length ? styles.checkedItemText : styles.listItemText
             }>

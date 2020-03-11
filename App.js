@@ -6,11 +6,15 @@ import Header from './components/Header';
 import ListItem from './components/ListItem';
 import AddItem from './components/AddItem';
 
+
+
+
+
 const App = () => {
   const [items, setItems] = useState([
     {
       id: uuid(),
-      text: 'Milk',
+      stakeholder: "jack",
     },
     {
       id: uuid(),
@@ -34,6 +38,9 @@ const App = () => {
     id: null,
     text: null,
   });
+
+  
+
 
   const [checkedItems, checkedItemChange] = useState([]);
 
@@ -59,11 +66,11 @@ const App = () => {
     editItemDetailChange({id: editItemDetail.id, text});
   };
 
-  const addItem = text => {
+  const addItem = (text,stakeholder) => {
     if (!text) {
       Alert.alert(
         'No item entered',
-        'Please enter an item when adding to your shopping list',
+        'Make sure you entered the correct ammounts',
         [
           {
             text: 'Understood',
@@ -74,7 +81,7 @@ const App = () => {
       );
     } else {
       setItems(prevItems => {
-        return [{id: uuid(), text}, ...prevItems];
+        return [{id: uuid(), stakeholder}, ...prevItems];
       });
     }
   };
@@ -103,7 +110,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Header title="Shopping List" />
+      <Header title="Distribution order menu" />
       <AddItem addItem={addItem} />
       <FlatList
         data={items}

@@ -10,6 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@scatterjs/core": "^2.7.51",
+    "@scatterjs/eosjs2": "^1.5.33",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-vector-icons": "^6.6.0",

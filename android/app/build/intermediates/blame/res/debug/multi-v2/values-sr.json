@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/chris/Documents/github/blockbeer/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml",
+            "outputFile": "/home/chris/Documents/github/Beers-and-Blocks/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml",
             "map": [
                 {
                     "source": "/home/chris/.gradle/caches/transforms-2/files-2.1/eebde3a34d0b89ed00e2dad825960cdc/res/values-sr/values-sr.xml",
